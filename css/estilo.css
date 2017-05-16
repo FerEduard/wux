@@ -1,0 +1,16 @@
+.cuadro{
+	border:solid 1px;	
+}
+
+.titulo{
+	background-color:#0ACDFF;
+}
+
+.control{
+	background-color: #BFBEBE;
+}
+
+.right {
+    float: right;
+	margin: 0 0 10px 10px;
+}
