@@ -10,9 +10,13 @@
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 
 <body>
+<?php include ("inc/menu.php");?>
+<section class="portafolio">
 <div class="container">
 	<?php 
 		include_once("class/co.php");
@@ -33,7 +37,7 @@
     ?>   
     <div class="row cuadro">
 
-    	<div class="col-xs-12 titulo"><h1><?php $lib->show($leccion['TITULO']) ?></h1></div>
+    	<div class="col-xs-12 titulo"><?php $lib->show($leccion['TITULO']) ?></div>
     	<div id="datos">
     	<div class="col-xs-6">
         	<img id="img1" src="<?php $lib->show( $seccion['IMG1']) ?>" alt="" class=" img-responsive img-thumbnail" width="200" height="300">
@@ -49,18 +53,19 @@
             <h2><span class="label label-info">Español</span></h2>
             <h3 id="traduccion"><?php $lib->show($seccion['TRADUCCION']) ?></h3>
         </div>
+        </div>
         <div class="col-xs-12 control">
-        	<button class="btn btn-warning right" 
+        	<button class="btn btn-default right" 
             id="siguiente"
             a="<?php $lib->show($seccion['COD_SECCION']) ?>" 
             name="<?php echo "leccion"?>"
             codex="<?php $lib->show($seccion['COD_LECCION'])?>"
-                >Siguiente</button>
-        </div>
+                >Siguiente   <span class="glyphicon glyphicon-ok"></span></button>
         </div>
     </div>
     
 </div>
+</section>
 
 </body>
 
