@@ -5,7 +5,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="#page-top">Wux</a>
+                <a class="navbar-brand" href="index.php">Wux</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -14,10 +14,10 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
-                    <li class="page-scroll">
-                        <a href="#portfolio">Inicio</a>
+                    <li>
+                        <a href="index.php">Inicio</a>
                     </li>
-                    <li class="page-scroll">
+                    <li>
                         <a href="#about">Colaboradores</a>
                     </li>
                 </ul>

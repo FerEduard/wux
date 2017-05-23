@@ -6,7 +6,7 @@
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/play.js"></script>
-<script src="js/a_seccion.js"></script>
+<script src="js/a_seccion_formato.js"></script>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
@@ -41,7 +41,7 @@
     	<div id="datos">
     	<div class="col-xs-6">
         	<img id="img1" src="<?php $lib->show( $seccion['IMG1']) ?>" alt="" class=" img-responsive img-thumbnail" width="200" height="300">
-            <img id="img2" src="<?php $lib->show($seccion['IMG1']) ?>" alt="" class=" img-responsive img-thumbnail hidden-xs hidden-sm" width="200" height="300">
+            <img id="img2" src="<?php $lib->show($seccion['IMG2']) ?>" alt="" class=" img-responsive img-thumbnail hidden-xs hidden-sm" width="200" height="300">
         </div>
         <div class="col-xs-6">
         	<h2><span class="label label-success"><?php $lib->show($idioma['DESCRIPCION']) ?></span></h2>
