@@ -21,10 +21,9 @@
     <div class="row cuadro">
 
     	<div class="col-xs-12 titulo">Felicitaciones</div>
-    	<div id="datos">
+        <img src="icons/copa.png"  height="350px" width="350px" alt="Felicidades" class="img-responsive center-block">
     	<h1 class="text-center">BIEN HECHO, HAS FINALIZADO ESTA LECCIÓN</h1>
     
-        </div>
         
         <div class="col-xs-12 control">
         	<a href="index.php" class="btn btn-default right">Terminar</a>

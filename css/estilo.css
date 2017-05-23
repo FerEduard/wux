@@ -205,6 +205,22 @@ body{
 	border-radius: 10px;
 }
 
+.cuadro-padding{
+	background-color: #FFFFFF;
+	margin-top: 20px;
+	border-radius: 10px;
+	padding:30px;
+}
+
 #datos{
 	height: 400px;	
+}
+
+.detail{
+
+	padding-top:100px;
+	padding-bottom:100px;
+	border-radius: 15px;
+	border:solid 1px;
+	border-color:#BCB5B6;
 }

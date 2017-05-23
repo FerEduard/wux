@@ -15,54 +15,38 @@
 </head>
 
 <body>
-<?php include ("inc/menu.php");?>
+<?php include ("inc/menu.php");
+	include_once("class/lib.php");
+	$lib = new lib();
+?>
 <section class="portafolio">
-<div class="container">
-	<?php 
-		include_once("class/co.php");
-		include_once("class/tabla.php");
-		include_once("class/lib.php");
-		
-		$lib = new lib();
-		
-		$co = new Connection();
-		$co = $co->co();
-		
-		$t_seccion = new Tabla($co, "seccion");
-		$t_idioma = new Tabla($co, "idioma");
-		$t_leccion = new Tabla($co, "leccion");
-		$seccion = $t_seccion->selectFirst("cod_leccion", 1);
-		$idioma = $t_idioma->select($seccion["COD_IDIOMA"]);
-		$leccion = $t_leccion->select($seccion["COD_LECCION"]);
-    ?>   
+<div class="container">  
     <div class="row cuadro">
+		<div class="col-xs-12">
+        	<div class="row">
+            	<div class="col-xs-12">
+                <a href="lecciones.php?l=<?php echo $lib->encriptar("1"); ?>">
+                    <img src="icons/pintura.png"  height="200px" width="200px" class="img-responsive center-block"  alt="colores">
+                    <h3 class="text-center">Colores</h3>
+                </a>
+                </div>
+                
+                <div class="col-md-2 hidden-xs"></div>
+                <div class="col-xs-12 col-md-4">
+                    <img src="icons/numeros.png"  height="200px" width="200px" class="img-responsive center-block"  alt="números">
+                    <h3 class="text-center">Números</h3>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <img src="icons/mochila.png"  height="200px" width="200px" class="img-responsive center-block"  alt="personas">
+                    <h3 class="text-center">Personas</h3>
+                </div>
+                <div class="col-md-2 hidden-xs"></div>
+                
+                
+            </div>
+        </div>
 
-    	<div class="col-xs-12 titulo"><?php $lib->show($leccion['TITULO']) ?></div>
-    	<div id="datos">
-    	<div class="col-xs-6">
-        	<img id="img1" src="<?php $lib->show( $seccion['IMG1']) ?>" alt="" class=" img-responsive img-thumbnail" width="200" height="300">
-            <img id="img2" src="<?php $lib->show($seccion['IMG1']) ?>" alt="" class=" img-responsive img-thumbnail hidden-xs hidden-sm" width="200" height="300">
-        </div>
-        <div class="col-xs-6">
-        	<h2><span class="label label-success"><?php $lib->show($idioma['DESCRIPCION']) ?></span></h2>
-        	<h3><span id="expresion"><?php $lib->show($seccion['EXPRESION']) ?></span>
-                <button class="img-circle" id="play" data="<?php $lib->show($seccion['AUDIO']) ?>">
-                	<span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
-                </button>
-            </h3>
-            <h2><span class="label label-info">Español</span></h2>
-            <h3 id="traduccion"><?php $lib->show($seccion['TRADUCCION']) ?></h3>
-        </div>
-        </div>
-        <div class="col-xs-12 control">
-        	<button class="btn btn-default right" 
-            id="siguiente"
-            a="<?php $lib->show($seccion['COD_SECCION']) ?>" 
-            name="<?php echo "leccion"?>"
-            codex="<?php $lib->show($seccion['COD_LECCION'])?>"
-                >Siguiente   <span class="glyphicon glyphicon-ok"></span></button>
-        </div>
-    </div>
+	</div>
     
 </div>
 </section>
