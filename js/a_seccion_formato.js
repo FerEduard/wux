@@ -13,7 +13,13 @@ $(document).ready(function(){
 			url: "inc/ajax_formato.php"
 		})
 		 .done(function( data, textStatus, jqXHR ) {
-			 $(".cuadro").html(data);
+			 
+			 if ( data.next == 'si') {
+				$("#datos").html(data.html); 
+				$("#siguiente").attr('a',data.a);
+			 }else{
+			 	window.location.href="mensaje.php";
+			 }
 		 })
 		 .fail(function( jqXHR, textStatus, errorThrown ) {
 			 if ( console && console.log ) {
