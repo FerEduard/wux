@@ -24,12 +24,14 @@
     <div class="row cuadro">
 		<div class="col-xs-12">
         	<div class="row">
-            	<div class="col-xs-12">
+            	<div class="col-md-4 hidden-xs"></div>
+            	<div class="col-xs-12 col-md-4">
                 <a href="lecciones.php?l=<?php echo $lib->encriptar("1"); ?>">
                     <img src="icons/pintura.png"  height="200px" width="200px" class="img-responsive center-block"  alt="colores">
                     <h3 class="text-center">Colores</h3>
                 </a>
                 </div>
+                <div class="col-md-4 hidden-xs"></div>
              </div>
                 <!--Inicio Fila -->
                 <div class="row">
@@ -42,7 +44,7 @@
                 </div>
                 <div class="col-xs-12 col-md-4">
                 <a href="lecciones.php?l=<?php echo $lib->encriptar("3"); ?>">
-                    <img src="icons/mochila.png"  height="200px" width="200px" class="img-responsive center-block"  alt="personas">
+                    <img src="icons/gente.png"  height="200px" width="200px" class="img-responsive center-block"  alt="personas">
                     <h3 class="text-center">Personas</h3>
               	</a>
                 </div>
@@ -55,13 +57,13 @@
                 <div class="col-md-2 hidden-xs"></div>
                 <div class="col-xs-12 col-md-4">
                 	<a href="lecciones.php?l=<?php echo $lib->encriptar("4"); ?>">
-                    <img src="icons/numeros.png"  height="200px" width="200px" class="img-responsive center-block"  alt="números">
+                    <img src="icons/animal.png" height="200px" width="200px" class="img-responsive center-block"  alt="animales">
                     <h3 class="text-center">Animales</h3>
                     </a>
                 </div>
                 <div class="col-xs-12 col-md-4">
                 	<a href="lecciones.php?l=<?php echo $lib->encriptar("5"); ?>">
-                    <img src="icons/mochila.png"  height="200px" width="200px" class="img-responsive center-block"  alt="personas">
+                    <img src="icons/reloj.png"  height="200px" width="200px" class="img-responsive center-block"  alt="tiempo">
                     <h3 class="text-center">Tiempo</h3>
                     </a>
                 </div>
@@ -80,7 +82,7 @@
                 </div>
                 <div class="col-xs-12 col-md-4">
                 	<a href="lecciones.php?l=<?php echo $lib->encriptar("7"); ?>">
-                    <img src="icons/mochila.png"  height="200px" width="200px" class="img-responsive center-block"  alt="personas">
+                    <img src="icons/ocupacion.png"  height="200px" width="200px" class="img-responsive center-block"  alt="ocupaciones">
                     <h3 class="text-center">Ocupaciones</h3>
                     </a>
                 </div>

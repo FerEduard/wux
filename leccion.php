@@ -39,19 +39,32 @@
 
     	<div class="col-xs-12 titulo"><?php $lib->show($leccion['TITULO']) ?></div>
     	<div id="datos">
-    	<div class="col-xs-6">
-        	<img id="img1" src="<?php $lib->show( $seccion['IMG1']) ?>" alt="" class=" img-responsive img-thumbnail" width="200" height="300">
-            <img id="img2" src="<?php $lib->show($seccion['IMG2']) ?>" alt="" class=" img-responsive img-thumbnail hidden-xs hidden-sm" width="200" height="300">
-        </div>
-        <div class="col-xs-6">
-        	<h2><span class="label label-success"><?php $lib->show($idioma['DESCRIPCION']) ?></span></h2>
-        	<h3><span id="expresion"><?php $lib->show($seccion['EXPRESION']) ?></span>
-                <button class="img-circle" id="play" data="<?php $lib->show($seccion['AUDIO']) ?>">
-                	<span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
-                </button>
-            </h3>
-            <h2><span class="label label-info">Español</span></h2>
-            <h3 id="traduccion"><?php $lib->show($seccion['TRADUCCION']) ?></h3>
+        <?php 
+			if(strlen($seccion['IMG1']) > 0){
+				echo '<div class="col-xs-6 hidden-xs">
+						<img id="img1" src="'.$seccion['IMG1'].'" alt="" class=" img-responsive img-thumbnail hidden-xs" width="200" height="300">
+						<img id="img2" src="'.$seccion['IMG2'].'" alt="" class=" img-responsive img-thumbnail hidden-xs hidden-sm" width="200" height="300">
+					</div>
+					<div class="col-xs-6">';
+			}else{
+				echo '<div class="col-xs-12">';
+			}
+		?>
+    	
+        
+        
+            <div class="col-xs-12 col-md-6">
+                <h2><span class="label label-success"><?php $lib->show($idioma['DESCRIPCION']) ?></span></h2>
+                <h3><span id="expresion"><?php $lib->show($seccion['EXPRESION']) ?></span>
+                    <button class="img-circle" id="play" data="<?php $lib->show($seccion['AUDIO']) ?>">
+                        <span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+                    </button>
+                </h3>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <h2><span class="label label-info">Español</span></h2>
+                <h3 id="traduccion"><?php $lib->show($seccion['TRADUCCION']) ?></h3>
+            </div>
         </div>
         </div>
         <div class="col-xs-12 control">
