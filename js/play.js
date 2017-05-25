@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#play").click(function(){
+	$('body').on('click','#play',function(){
 		playSound("audio/" + $("#play").attr("data"));
 	});
 	

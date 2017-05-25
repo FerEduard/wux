@@ -56,9 +56,15 @@
             <div class="col-xs-12 col-md-6">
                 <h2><span class="label label-success"><?php $lib->show($idioma['DESCRIPCION']) ?></span></h2>
                 <h3><span id="expresion"><?php $lib->show($seccion['EXPRESION']) ?></span>
-                    <button class="img-circle" id="play" data="<?php $lib->show($seccion['AUDIO']) ?>">
-                        <span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
-                    </button>
+                
+                <?php 
+					if(strlen($seccion['AUDIO']) >0){
+						echo '<button class="img-circle" id="play" data="'.$seccion['AUDIO'].'">
+						<span class="glyphicon glyphicon-volume-up" aria-hidden="true"></span>
+					</button>';
+					}
+				?>
+                    
                 </h3>
             </div>
             <div class="col-xs-12 col-md-6">
