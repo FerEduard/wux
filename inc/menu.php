@@ -18,6 +18,9 @@
                         <a href="index.php">Inicio</a>
                     </li>
                     <li>
+                        <a href="practica.php">Practica</a>
+                    </li>
+                    <li>
                         <a href="#about">Colaboradores</a>
                     </li>
                 </ul>
