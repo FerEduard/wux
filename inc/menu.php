@@ -21,7 +21,7 @@
                         <a href="practica.php">Practica</a>
                     </li>
                     <li>
-                        <a href="#about">Colaboradores</a>
+                        <a href="info.php">Informacion</a>
                     </li>
                 </ul>
             </div>
