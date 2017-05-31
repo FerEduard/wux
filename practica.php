@@ -11,6 +11,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/a_seccion.js"></script>
 <script src="js/escuchar.js"></script>
+<script src="js/play2.js"></script>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="css/estilo.css">
@@ -27,7 +28,7 @@
     <div class="col-xs-12 col-md-8 cuadro">
 		<table class="table table-hover"> 
         <thead> 
-        	<tr> <th>Español</th> <th>Kakchiquel</th></tr> 
+        	<tr> <th>Kakchiquel</th> <th>Español</th><th>Pronunciación</th></tr> 
         </thead> 
         <tbody> 
         <?php 
@@ -37,7 +38,7 @@
 				$co = $co->co();
 				$lib = new lib();
 				
-				$query = "SELECT COD_SECCION,EXPRESION,TRADUCCION FROM seccion WHERE REC != ''";
+				$query = "SELECT COD_SECCION,EXPRESION,TRADUCCION,AUDIO FROM seccion WHERE REC != ''";
 				$stmt = $co->prepare($query); 
 				$stmt->execute();
 			
@@ -52,7 +53,12 @@
 						$title = $rows[$i][1];
 					}
 					
-					$comp = "<tr data= '".$rows[$i][0]."'> <td>".$rows[$i][1]."</td> <td>".$rows[$i][2]."</td> </tr> ";
+					$comp = "<tr data= '".$rows[$i][0]."'> <td>".$rows[$i][1]."</td> <td>".$rows[$i][2]."</td> 
+					
+					<td><button class='img-circle play' id='play' data='".$rows[$i][3]."'>
+						<span class='glyphicon glyphicon-volume-up' aria-hidden='true'></span>
+					</button></td> 
+					</tr> ";
 					echo $comp;
 				}
 				

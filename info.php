@@ -24,7 +24,7 @@
             <p>Está página ha sido desarrollada por Estudiantes del 11o. Semestre de Ingeniería en Sistemas de la Universidad Mariano Gálvez de Guatemala sede en Antigua Guatemala, con el propósito de aportar material didáctico para el Idioma Kakchiquel.</p>
         	<h3 class="page-header">TRADUCTORA</h3>
             <p>Agradecimiento por su tiempo y dedicación a la traductora</p>
-            <h4>Kelly Flores <small>Chimaltenango</small></h4>
+            <h4>Kellyn Rosita Ajú Gómez <small>Patzún, Chimaltenango</small></h4>
             <h3 class="page-header">DISEÑO</h3>
             <p>Iconos:</p>
 			<a target="_blank"  href='http://www.freepik.com/free-vector/beatiful-back-to-school-icons-set_1086684.htm'>Designed by Freepik</a>
