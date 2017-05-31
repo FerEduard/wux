@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.1.14
 -- http://www.phpmyadmin.net
 --
@@ -17,7 +17,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `wux`
+-- Base de datos: `db683450210`
 --
 
 -- --------------------------------------------------------
@@ -35,7 +35,7 @@ CREATE TABLE IF NOT EXISTS `seccion` (
   `IMG1` varchar(100) NOT NULL DEFAULT '',
   `IMG2` varchar(100) NOT NULL DEFAULT '',
   `AUDIO` varchar(100) NOT NULL DEFAULT '',
-  `REC` varchar(400) DEFAULT NULL,
+  `REC` varchar(400) NOT NULL DEFAULT '',
   PRIMARY KEY (`COD_SECCION`),
   KEY `FKSECCION265978` (`COD_IDIOMA`),
   KEY `FKSECCION639352` (`COD_LECCION`)
