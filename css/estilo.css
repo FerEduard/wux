@@ -35,7 +35,7 @@ header .intro-text .skills {
   }
 }
 .navbar-custom {
-  background:#F85C00;
+  background:#252525;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -57,7 +57,7 @@ header .intro-text .skills {
   color: white;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #272323;
+  color: #3FB8EB;
 }
 .navbar-custom .navbar-nav li a:focus,
 .navbar-custom .navbar-nav li a:active {
@@ -217,7 +217,6 @@ body{
 }
 
 .detail{
-
 	padding-top:100px;
 	padding-bottom:100px;
 	border-radius: 15px;

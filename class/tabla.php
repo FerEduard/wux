@@ -10,7 +10,7 @@ class Tabla{
 	
 	public function select($id){
 		try {
-			$query = "SELECT * FROM $this->name where cod_$this->name = $id";
+			$query = "SELECT * FROM $this->name where cod_$this->name = '$id'";
 			$co = $this->co;
 			$stmt = $co->prepare($query); 
 			$stmt->execute();
@@ -30,7 +30,7 @@ class Tabla{
 	
 	public function selectFirst($columna, $valor){
 		try {
-			$query = "SELECT * FROM $this->name where $columna = $valor order by cod_$this->name limit 1";
+			$query = "SELECT * FROM $this->name where $columna = '$valor' order by cod_$this->name limit 1";
 			$co = $this->co;
 			$stmt = $co->prepare($query); 
 			$stmt->execute();
@@ -42,7 +42,7 @@ class Tabla{
 			}
 		}
 		catch(PDOException $e) {
-			echo '<div class="alert alert-danger" role="alert">Oh! Parece que hay un problema</div>';
+			echo '<div class="alert alert-danger" role="alert">Oh! Parece que hay un problema. '.$e.'</div>';
 		}
 		
 		return null;
